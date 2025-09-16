@@ -18,7 +18,7 @@ cd test-backend
 
 2. Execute com Docker Compose:
 ```bash
-docker-compose up -d
+docker-compose up -d --build
 ```
 
 ## Banco de Dados
