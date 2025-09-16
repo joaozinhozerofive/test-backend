@@ -19,6 +19,7 @@ cd test-backend
 2. Execute com Docker Compose:
 ```bash
 docker-compose up -d --build
+docker-compose exec web composer install
 ```
 
 ## Banco de Dados
