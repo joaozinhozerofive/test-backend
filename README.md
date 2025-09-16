@@ -28,7 +28,7 @@ O sistema utiliza PostgreSQL com as seguintes tabelas:
 - **persons**: Armazena dados das pessoas (nome, CPF)
 - **contacts**: Armazena contatos das pessoas (tipo, descrição, pessoa_id)
 
-### Executar Migrações
+### Executar Migrations (criar tabelas no banco de dados)
 
 ```bash
 php migrations.php status
