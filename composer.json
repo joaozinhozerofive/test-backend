@@ -1,0 +1,15 @@
+{
+	"require": {
+		"php": "^8.2",
+		"doctrine/orm": "^3.5",
+		"doctrine/dbal": "^4.3",
+		"symfony/cache": "^7.3",
+		"doctrine/migrations": "^3.9"
+	},
+	"autoload": {
+		"psr-4": {
+		  "Web\\": "./",
+		  "Mvc\\": "./app/"
+		}
+	}
+}
