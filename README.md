@@ -31,11 +31,11 @@ O sistema utiliza PostgreSQL com as seguintes tabelas:
 ### Executar Migrations (criar tabelas no banco de dados)
 
 ```bash
-php migrations.php status
+docker-compose exec web php migrations.php status
 
-php migrations.php migrate
+docker-compose exec web php migrations.php migrate
 
-php migrations.php diff
+docker-compose exec web php migrations.php diff
 ```
 
 ### Tecnologias Utilizadas
