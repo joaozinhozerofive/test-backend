@@ -20,6 +20,7 @@ cd test-backend
 ```bash
 docker-compose up -d --build
 docker-compose exec web composer install
+docker-compose exec web composer update --no-interaction --no-progress
 ```
 
 ## Banco de Dados
