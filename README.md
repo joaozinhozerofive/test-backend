@@ -5,7 +5,7 @@ Sistema de gerenciamento de pessoas e contatos desenvolvido em PHP, seguindo o p
 ## Requisitos
 
 - Docker Desktop instalado
-- Ao abrir o Docker, você deverá instalar um serviço Linux caso esteja utilizando Windows
+- Para utilizar o Docker, você deverá instalar um serviço Linux caso esteja utilizando Windows
 - WSL instalado: https://learn.microsoft.com/windows/wsl/install
 
 ## Instalação e Execução
