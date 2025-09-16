@@ -5,19 +5,21 @@ Sistema de gerenciamento de pessoas e contatos desenvolvido em PHP, seguindo o p
 ## Requisitos
 
 - Docker Desktop instalado
-- Ao abrir o Docker, você deverá instalar um serviço Linux caso esteja utilizando Windows
+- Para utilizar o Docker, você deverá instalar um serviço Linux caso esteja utilizando Windows
 - WSL instalado: https://learn.microsoft.com/windows/wsl/install
 
 ## Instalação e Execução
 
 1. Clone o repositório em alguma pasta:
 ```bash
-git clone <url-do-repositorio>
+git clone https://github.com/joaozinhozerofive/test-backend.git
+cd test-backend
 ```
 
-2. Execute com Docker Compose:
+2. Execute com Docker Compose e instale as dependências:
 ```bash
-docker-compose up -d
+docker-compose up -d --build
+docker-compose exec web composer install
 ```
 
 ## Banco de Dados
@@ -27,14 +29,13 @@ O sistema utiliza PostgreSQL com as seguintes tabelas:
 - **persons**: Armazena dados das pessoas (nome, CPF)
 - **contacts**: Armazena contatos das pessoas (tipo, descrição, pessoa_id)
 
-### Executar Migrações
+### Executar Migrations (criar tabelas no banco de dados)
 
 ```bash
-php migrations.php status
+docker-compose exec web php migrations.php status
 
-php migrations.php migrate
+docker-compose exec web php migrations.php migrate
 
-php migrations.php diff
 ```
 
 ### Tecnologias Utilizadas
@@ -47,7 +48,7 @@ php migrations.php diff
 ### Problemas Comuns
 
 1. **Erro de conexão com o banco**:
-   - Verifique as credenciais no arquivo `.env`
+   - Verifique as credenciais no arquivo `.env` (Se o arquivo não existe, você deve criar)
    - Confirme se o PostgreSQL está rodando
 
 2. **Migrações não executam**:
