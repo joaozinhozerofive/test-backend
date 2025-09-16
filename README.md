@@ -13,6 +13,7 @@ Sistema de gerenciamento de pessoas e contatos desenvolvido em PHP, seguindo o p
 1. Clone o repositório em alguma pasta:
 ```bash
 git clone https://github.com/joaozinhozerofive/test-backend.git
+cd test-backend
 ```
 
 2. Execute com Docker Compose:
