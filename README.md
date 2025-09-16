@@ -47,7 +47,7 @@ php migrations.php diff
 ### Problemas Comuns
 
 1. **Erro de conexão com o banco**:
-   - Verifique as credenciais no arquivo `.env`
+   - Verifique as credenciais no arquivo `.env` (Se o arquivo não existe, você deve copiar o arquivo .env.example e remover o '.example' do nome do arquivo)
    - Confirme se o PostgreSQL está rodando
 
 2. **Migrações não executam**:
