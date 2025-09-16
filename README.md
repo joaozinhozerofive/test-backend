@@ -36,7 +36,6 @@ docker-compose exec web php migrations.php status
 
 docker-compose exec web php migrations.php migrate
 
-docker-compose exec web php migrations.php diff
 ```
 
 ### Tecnologias Utilizadas
