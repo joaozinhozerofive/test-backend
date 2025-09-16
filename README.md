@@ -16,7 +16,7 @@ git clone https://github.com/joaozinhozerofive/test-backend.git
 cd test-backend
 ```
 
-2. Execute com Docker Compose:
+2. Execute com Docker Composee instale as dependências:
 ```bash
 docker-compose up -d --build
 docker-compose exec web composer install
